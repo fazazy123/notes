@@ -1,0 +1,44 @@
+<!-- Styling Notes -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Note</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Notes App</h1>
+        <h2 class="header__subtitle">Take notes and never forget</h2>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="actions__container actions__container--spaced">
+        <a href="/index.html">Home</a>
+        <span id="last-edited"></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <input
+        id="note-title"
+        placeholder="Note title"
+        class="title-input input"
+      />
+      <textarea
+        id="note-body"
+        placeholder="Enter note text"
+        class="body-input"
+      ></textarea>
+      <button id="remove-note" class="button button--secondary">
+        Remove Note
+      </button>
+    </div>
+
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/cl1a-notes-functions.js"></script>
+    <script src="scripts/cl1a-notes-edit.js"></script>
+  </body>
+</html>

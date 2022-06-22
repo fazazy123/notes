@@ -1,0 +1,44 @@
+<!-- Styling Notes-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Note</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Notes App Notes</h1>
+        <h2 class="header__subtitle">Take notes and never forget</h2>
+      </div>
+    </header>
+
+    <div class="actions">
+      <div class="actions__container actions__container--spaced">
+        <input
+          id="search-text"
+          type="text"
+          placeholder="Filter notes"
+          class="input"
+        />
+        <select id="filter-by" class="dropdown">
+          <option value="byEdited">Sort by last edited</option>
+          <option value="byCreated">Sort by recently created</option>
+          <option value="alphabetical">Sort alphatical</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="notes"></div>
+      <button id="create-note" class="button">Create Note</button>
+    </div>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script> -->
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/uuid-array-notes.js"></script>
+    <script src="scripts/cl1a-notes-functions.js"></script>
+    <script src="scripts/cl1a-notes-app.js"></script>
+  </body>
+</html>
